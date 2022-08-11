@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  height: 450px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.container .card .imgage-wrapper {
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-position: -4em 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container .card .imgage-wrapper .box {
+  position: absolute;
+  left: -18%;
+  top: 40%;
+}
+
+.container .card .imgage-wrapper .hero {
+  background-image: url(images/illustration-woman-online-desktop.svg);
+  background-position: -4em center;
+  background-repeat: no-repeat;
+  margin-top: 3em;
+  height: 359px;
+  width: 472px;
+}
+
+.container .card .faq {
+  padding: 3em 2em;
+  width: 400px;
+}
+
+.container .card .faq h1 {
+  padding-bottom: 1em;
+  color: #1d1e35;
+}
+
+.container .card .faq .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .8em 0;
+}
+
+.container .card .faq .question .p1 {
+  color: #787887;
+  cursor: pointer;
+}
+
+.container .card .faq .question .p1:hover {
+  color: #f47c57;
+}
+
+.container .card .faq .question .arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.container .card .faq .answer {
+  display: none;
+}
+
+.container .card .faq .line {
+  background-color: #e7e7e9;
+  height: 2px;
+}
+
+.container .card .active .p1 {
+  color: #1d1e35;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container .card .active .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .card .active .answer {
+  display: block;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+  color: #787887;
+  padding-bottom: .8em;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    padding-top: 7em;
+  }
+  .container .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 350px;
+    height: 550px;
+    position: relative;
+  }
+  .container .card .imgage-wrapper {
+    position: absolute;
+    top: -16em;
+  }
+  .container .card .imgage-wrapper .hero {
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-position: center;
+    width: 275px;
+  }
+  .container .card .imgage-wrapper .box {
+    display: none;
+  }
+  .container .card .faq {
+    width: 95%;
+  }
+  .container .card .faq h1 {
+    text-align: center;
+  }
+  .container .card .faq .p1 {
+    font-size: 13px;
+  }
+  .container .card .faq .p2 {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
